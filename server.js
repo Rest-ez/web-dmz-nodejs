@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 const request = require('request');
 
 app.get('/', function(req, res) {
-  res.render('pages/main-s.hbs')
+  res.render('pages/main-s.hbs');
   });
   
 app.get('/users', function(req, res) {
