@@ -27,7 +27,7 @@ request({
     json: true
 }, (error, response, body) => {
 //console.log(fullname);
-const user = body.data
+const users = JSON.parse(body);
 res.render('pages/main.hbs', {
         users: user
     });
@@ -57,10 +57,10 @@ app.post('/users', (req, res) => {
    
    
    });
-app.post('/chore-added', (req, res) => {
+app.post('/user-added', (req, res) => {
     
-  res.render('pages/chore-success.hbs', {
-    pageTitle: 'Added Chore Page',
+  res.render('pages/user-success.hbs', {
+    pageTitle: 'Added User Page',
       
   });
 });
