@@ -53,44 +53,20 @@
       </div>
 
       <div class="jumbotron">
-        <h1>Heidi's New Chores</h1>
-        <p class="lead">What you've always hoped for - a chore assignment app for your loved one! </p>
+        <h1>Static Page</h1>
+        <p class="lead">No API calls from here </p>
         <p><a class="btn btn-lg btn-success" href="#" role="button">No Need to Sign Up Yet</a></p>
       </div>
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <h2>Your New Chore</h2>
-<!--
-            <div>    {{#todos}}
         
-  <div>
-     <p>{{text}}</p>
-
-         {{/todos}}
-      </div>
-</div>
-     
--->
-        
-<div>
-
-<li>
-    <a href="/todos/{{_id}}">{{text1}}</a> Assigned To: {{assigned}}
-</li>
-
-    
-
-
-
-        </div>  </div>  
-
         <div class="col-lg-6">
-          <h3>Add a New Task</h3>
-          <form name="form1" method="POST" action="/chores">
+          <h3>Add a User</h3>
+          <form name="form1" method="POST" action="/users">
     <table>
         <tr>
-        <td>Enter Text of Task:</td>
+        <td>Enter Text of User:</td>
         </tr>
         <tr>
         <td><input type="text" name="tasktext"></td>
@@ -99,17 +75,7 @@
         <td>&nbsp;</td>
         </tr>
         <tr>
-        <td>Assign the Chore:<br>
-            <div class="form-check">
-  <label class="form-check-label">
-    <input class="form-check-input" name="assignedTo" type="checkbox" value="eric">
-    Eric (Usually the first option)
-  </label>
-               <br>  <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" name="assignedTo" value="heidi">
-    Heidi (Usually the second option)
-  </label>
-</div></td>
+        
         </tr>
         
         
@@ -124,7 +90,7 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; 2017 Doyourchores, Inc.</p>
+        <p>&copy; 2019, Inc.</p>
       </footer>
 
     </div> <!-- /container -->
