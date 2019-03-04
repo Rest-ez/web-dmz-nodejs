@@ -61,60 +61,20 @@
       <div class="row marketing">
         <div class="col-lg-6">
           <h2>Users</h2>
-<!--
-            <div>    {{#users}}
-        
-  <div>
-     <p>{{text}}</p>
 
-         {{/users}}
-      </div>
-</div>
-     
--->
         
 <div>
 {{#users}}
 <li>
-    <a href="/users/{{_id}}">{{text}}</a> 
-    <!--> Assigned To: {{assignedTo}}
+    <a href="/users/{{_id}}">{{fullname}}</a> 
 </li>
 
     
-{{/todos}}
+{{/users}}
 
 
         </div>  </div>  
-
-        <div class="col-lg-6">
-          <h3>Add a New Task</h3>
-          <form name="form1" method="POST" action="/chores">
-    <table>
-        <tr>
-        <td>Enter Text of Task:</td>
-        </tr>
-        <tr>
-        <td><input type="text" name="tasktext"></td>
-        </tr>
-       <tr>
-        <td>&nbsp;</td>
-        </tr>
-        <tr>
-        <td>Assign the Chore:<br>
-            <div class="form-check">
-  <label class="form-check-label">
-    <input class="form-check-input" name="assignedTo" type="checkbox" value="eric">
-    Eric (Usually the first option)
-  </label>
-               <br>  <label class="form-check-label">
-    <input class="form-check-input" type="checkbox" name="assignedTo" value="heidi">
-    Heidi (Usually the second option)
-  </label>
-</div></td>
-        </tr>
-        
-        
-        <tr>
+ <tr>
         <td>&nbsp;</td>
         </tr>
         <tr>
@@ -125,7 +85,7 @@
       </div>
 
       <footer class="footer">
-        <p>&copy; 2017 Doyourchores, Inc.</p>
+        <p>&copy; 2019.gov</p>
       </footer>
 
     </div> <!-- /container -->

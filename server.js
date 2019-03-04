@@ -26,10 +26,14 @@ request({
     url: 'http://locahost:8002/api/users',
     json: true
 }, (error, response, body) => {
-//console.log(fullname);
-const users = JSON.parse(body);
+
+=======
+//console.log(data);
+//const users = JSON.parse(body);
+const users = response;
+>>>>>>> d51f4910cad050beb22cdbb9d7ead2753a3a7a25
 res.render('pages/main.hbs', {
-        users: user
+        user: users
     });
 
   });
