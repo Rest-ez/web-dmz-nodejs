@@ -19,8 +19,8 @@ const request = require('request');
 
 app.get('/', function(req, res) {
   request({
-      url: 'http://locahost:8000/api/',
-      json: true
+      url: 'http://locahost:8002/api/'
+      //json: true
   }, (error, response, body) => {
   console.log(body);
   //const users = body.users
