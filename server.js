@@ -27,9 +27,9 @@ request({
     json: true
 }, (error, response, body) => {
 //console.log(fullname);
-const fullname = body.fullname
+const user = body.data
 res.render('pages/main.hbs', {
-        users: fullname
+        users: user
     });
 
   });
