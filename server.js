@@ -32,6 +32,8 @@ request({
 //const users = JSON.parse(body);
 const users = response;
 
+console.log(response);
+
 res.render('pages/main.hbs', {
         user: users
     });
